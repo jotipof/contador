@@ -29,16 +29,18 @@ h1 {
 }
 
 .photo-frame {
-    border: 8px solid #ccc; /* Moldura mais fina */
-    padding: 10px;
+    border: 6px solid #ccc; /* Moldura mais fina */
+    padding: 5px;
     margin-right: 20px; /* Espaço entre a foto e o contador */
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    width: 150px; /* Limita a largura total da moldura */
+    height: auto;
 }
 
 .photo {
-    max-width: 120px; /* Limita a largura da imagem */
+    width: 100%; /* A imagem ocupará 100% da largura da moldura */
     height: auto; /* Mantém a proporção da imagem */
     display: block;
     border-radius: 5px;
