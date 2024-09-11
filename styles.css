@@ -18,8 +18,9 @@ body {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 28px;
     color: #333;
+    margin-bottom: 30px;
 }
 
 .content {
@@ -68,15 +69,17 @@ h1 {
 .container-labirinto {
     text-align: center;
     background-color: white;
-    padding: 30px;
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin-top: 50px;
+    margin: 50px auto;
 }
 
 .labirinto {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .labirinto p {
@@ -93,6 +96,55 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+.frase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.frase {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.frase-final {
+    font-size: 28px;
+    color: #FF6347;
+    font-weight: bold;
+}
+
+.botao-labirinto {
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botao-labirinto:hover {
+    background-color: #FF4500;
+}
+
+.botao-labirinto:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.6);
 }
 
 .labirinto button:hover {
