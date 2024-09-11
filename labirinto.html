@@ -10,16 +10,27 @@
     <div class="container-labirinto">
         <h1>Explora o nosso labirinto de frases</h1>
         <div class="labirinto">
-            <p id="frase1">"Frase icónica 1 entre nós" <button onclick="mostrarFrase('frase2')">Seguir</button></p>
-            <p id="frase2" style="display:none;">"Frase icónica 2 entre nós" <button onclick="mostrarFrase('frase3')">Seguir</button></p>
-            <p id="frase3" style="display:none;">"Frase icónica 3 entre nós" <button onclick="mostrarFrase('final')">Seguir</button></p>
-            <p id="final" style="display:none; font-size: 24px; color: #FF6347; font-weight: bold;">"Amo-te muito!"</p>
+            <div class="frase-container" id="frase1">
+                <p class="frase">"Frase icónica 1 entre nós"</p>
+                <button class="botao-labirinto" onclick="mostrarFrase('frase2')">Seguir</button>
+            </div>
+            <div class="frase-container" id="frase2" style="display:none;">
+                <p class="frase">"Frase icónica 2 entre nós"</p>
+                <button class="botao-labirinto" onclick="mostrarFrase('frase3')">Seguir</button>
+            </div>
+            <div class="frase-container" id="frase3" style="display:none;">
+                <p class="frase">"Frase icónica 3 entre nós"</p>
+                <button class="botao-labirinto" onclick="mostrarFrase('final')">Seguir</button>
+            </div>
+            <div class="frase-container" id="final" style="display:none;">
+                <p class="frase-final">"Amo-te muito!"</p>
+            </div>
         </div>
     </div>
 
     <script>
         function mostrarFrase(proximaFrase) {
-            document.getElementById(proximaFrase).style.display = 'block';
+            document.getElementById(proximaFrase).style.display = 'flex';
         }
     </script>
 </body>
