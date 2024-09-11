@@ -46,6 +46,25 @@ h1 {
     border-radius: 5px;
 }
 
+.labirinto-button {
+    margin-top: 20px;
+}
+
+.labirinto-button button {
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.labirinto-button button:hover {
+    background-color: #FF4500;
+}
+
 #daysCounter {
     font-size: 40px;
     font-weight: bold;
