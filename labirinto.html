@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labirinto de Frases</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-labirinto">
+        <h1>Explora o nosso labirinto de frases</h1>
+        <div class="labirinto">
+            <p id="frase1">"Frase icónica 1 entre nós" <button onclick="mostrarFrase('frase2')">Seguir</button></p>
+            <p id="frase2" style="display:none;">"Frase icónica 2 entre nós" <button onclick="mostrarFrase('frase3')">Seguir</button></p>
+            <p id="frase3" style="display:none;">"Frase icónica 3 entre nós" <button onclick="mostrarFrase('final')">Seguir</button></p>
+            <p id="final" style="display:none; font-size: 24px; color: #FF6347; font-weight: bold;">"Amo-te muito!"</p>
+        </div>
+    </div>
+
+    <script>
+        function mostrarFrase(proximaFrase) {
+            document.getElementById(proximaFrase).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
