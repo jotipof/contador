@@ -14,11 +14,34 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
 }
 
 h1 {
     font-size: 24px;
     color: #333;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-frame {
+    border: 10px solid #ccc; /* Moldura */
+    padding: 10px;
+    margin-right: 20px; /* Espaço entre a foto e o contador */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.photo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    border-radius: 5px;
 }
 
 #daysCounter {
