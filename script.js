@@ -10,7 +10,7 @@ function calculateDays() {
 }
 
 // Define o volume da música de fundo (entre 0 e 1)
-document.getElementById('backgroundMusic').volume = 0.2;  // 20% do volume
+document.getElementById('backgroundMusic').volume = 0.5;  // 20% do volume
 
 // Chame a função para atualizar o contador
 calculateDays();
